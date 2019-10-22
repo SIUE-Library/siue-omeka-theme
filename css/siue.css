@@ -1,0 +1,297 @@
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+header { border-style: none; width: 100%; }
+h1 { line-height: unset; }
+div.body-wrap {z-index: unset;}
+div.body-wrap .title-link a { color: #FFF; }
+div.body-wrap .title-link a:hover { color: #FFF; }
+body { line-height: unset; overflow: unset; }
+a { border-bottom: none; }
+#wrap { padding: 0; max-width: unset; margin: auto; }
+
+.hdrWrap .hdrTopWrap .hdrNavWrap nav {
+    top: 8px;
+}
+
+.hdrWrap button {
+    padding: unset;
+}
+
+.hdrTitleWrap .textMainTitle a.pull-menu {
+    bottom: 12px;
+}
+
+.boxlinks-link:hover {
+    font-weight: normal !important;
+}
+
+div.body-wrap .secondary-nav .boxlinks-link {
+    display: inline-block;
+    border: 0;
+}
+
+div.body-wrap .secondary-nav .boxlinks-link:hover {
+    background-image: none;
+}
+
+#home #primary, #home #secondary {
+    padding: 0;
+}
+
+#featured-item, #featured-collection, #featured-exhibit, #recent-items {
+    background-color: #EFEFEF;
+    padding: 12px 10px;
+    margin-bottom: 0.75em;
+    overflow: auto;
+}
+
+#featured-item h2, #featured-collection h2, #featured-exhibit h2, #recent-items h2 {
+    font-size: 1.25em;
+    font-weight: 600 !important;
+    margin-top: 0;
+    color: #565656;
+    line-height: unset;
+}
+
+#primary-nav, #content { margin-top: 10px; padding-top: 0;}
+
+.omeka-footer {
+    /* display: none; */
+    border-top: none;
+    padding-top: 200px;
+    padding-bottom: 0px;
+}
+
+.omeka-footer p {
+    float: unset;
+    text-align: center;
+}
+
+div.footerContainer {
+    display: block;
+}
+
+.footerContainer ul {
+    margin-bottom: unset;
+}
+
+#exhibit-pages {
+    background-color: #ddd;
+    padding: 0;
+}
+
+#exhibit-pages > ul {
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#exhibit-pages ul li ul {
+    max-height: max-content;
+    overflow-x: hidden;
+    overflow-y: visible
+}
+
+#exhibit-pages ul, #exhibit-pages ul li  {
+    padding: 0;
+    margin: 0;
+}
+
+#exhibit-pages ul li {
+    border-bottom: 1px solid #bbb;
+    padding: 15px;
+}
+
+#exhibit-pages ul ul {
+    margin: 0;
+}
+
+#exhibit-pages ul ul li {
+    border: 0;
+}
+
+#exhibit-pages h4 {
+    background-color: #6D6D6D;
+    color: #FFF;
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    border: 0;
+    font-weight: normal;
+    margin: 0;
+}
+
+#exhibit-pages h4 a {
+    color: #FFF;
+}
+
+#exhibit-page-navigation {
+    display: inline-block;
+}
+
+/* #exhibit-page-navigation div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+} */
+
+#exhibit-page-navigation a {
+    background-color: #ddd;
+    padding: 15px;
+    display: block;
+    line-height: unset;
+}
+
+.pagination-nav .pagination a {
+    background-color: #ddd;
+    color: #e41c24 !important;
+}
+
+.element-set {
+    margin: 0 0 0 0;
+}
+
+#dublin-core-title {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #primary-nav {
+        display: none;
+        margin-top: 0px;
+    }
+
+    .omeka-footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #content {
+        padding: 0 14px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .nav-menu {
+        width: 230px;
+    }
+
+    #content .exhibit-page, #exhibit-blocks, #exhibit-page-navigation {
+        display: block;
+        width: 470px;
+    }
+
+    #exhibit-pages {
+        width: 230px;
+        position: absolute;
+        right: 0;
+        top: 68px;
+    }
+
+}
+
+input {
+    font-family: inherit !important;
+}
+
+.dark-button {
+    color: #FFF;
+    background-color: #494949;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+    font-family: inherit;
+}
+
+.dark-button:hover {
+    background-color: #4f4f4f;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    /* overflow: auto; */ /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+.modal-header {
+    padding-bottom: 20px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+}
+
+.modal-body {
+    height: calc(92vh - 68.8px);
+    overflow: auto;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.body-wrap table#example tr:nth-child(odd), div.body-wrap table#example tr:nth-child(even) {
+    background-color: transparent;
+}
+
+tr.alt {
+    background-color: #e8e8e8 !important;
+}
+
+.dataTables_length, .dataTables_filter {
+    margin-bottom: 10px;
+}
+
+.dataTables_length select, .dataTables_filter input {
+    margin-left: 10px;
+}
+
+.dataTables_info, .dataTables_paginate {
+    text-align: center;
+}
+
+a.paginate_button {
+    padding: 10px;
+}
+
+a.paginate_button:hover {
+    cursor: pointer;
+}
+
+video.omeka-media {
+    width: 100%;
+    height: 360px;
+    object-fit: fill;
+}

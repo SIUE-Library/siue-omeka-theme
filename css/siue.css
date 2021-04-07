@@ -42,7 +42,7 @@ div.body-wrap .secondary-nav .boxlinks-link:hover {
     padding: 0;
 }
 
-#featured-item, #featured-collection, #featured-exhibit, #recent-items {
+#featured-item, #featured-collection, #featured-exhibit, #recent-items, .collection.record {
     background-color: #EFEFEF;
     padding: 12px 10px;
     margin-bottom: 0.75em;
@@ -294,4 +294,28 @@ video.omeka-media {
     width: 100%;
     height: 360px;
     object-fit: fill;
+}
+
+#collections-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    width: 100%;
+}
+
+.collection.record {
+    border-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    #collections-container {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 10px;
+        width: 100%;
+    }
+}
+
+.exhibit-block.layout-file-text {
+    width: 100% !important;
 }

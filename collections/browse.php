@@ -14,6 +14,15 @@ $sortLinks[__('Date Added')] = 'added';
     <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
 </div>
 
+<div id="collections-featured-collection">
+    <div class="collection record">
+    <h2><?php echo __('Featured Collection'); ?></h2>
+        <?php echo random_featured_collection(); ?>
+    </div>
+</div>
+
+<div id="collections-container">
+
 <?php foreach (loop('collections') as $collection): ?>
 
 <div class="collection record">
@@ -50,6 +59,8 @@ $sortLinks[__('Date Added')] = 'added';
 </div><!-- end class="collection" -->
 
 <?php endforeach; ?>
+
+</div> <!-- id="collections-container" -->
 
 <?php echo pagination_links(); ?>
 

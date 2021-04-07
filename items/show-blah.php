@@ -14,12 +14,14 @@
 
 <?php $itemFiles = $item->Files; ?>
 
+<div class="element-text files-full"><?php echo files_for_item(array('imageSize' => 'fullsize')); ?></div>
+
     <?php if (count($itemFiles) == "1"): ?>
-        <div class="element-text files-full"><?php echo files_for_item(array('imageSize' => 'fullsize')); ?></div>
+        <!-- <div class="element-text files-full"><php echo files_for_item(array('imageSize' => 'fullsize')); ?></div> -->
     <?php elseif (count($itemFiles) > "1"):
         $pdf = 0;
-        foreach($itemFiles as $itemFile):
-            if (strpos($itemFile["filename"], '.pdf') != false):
+       // foreach($itemFiles as $itemFile):
+            //if (strpos($itemFile["filename"], '.pdf') != false):
                 /* fire_plugin_hook('book_reader_item_show', array(
                     'view' => $this,
                     'item' => $item,
@@ -30,20 +32,17 @@
                 // Display the viewer with the specified item and specified options.
     // The options for UV are directly passed to the partial, so they are
     // available in the theme and set for the viewer.
-   // echo $this->universalViewer($item);
-            echo "<div class='element-text files-full'>";
-            echo files_for_item(array('imageSize' => 'fullsize')); 
-            echo "</div>";
+    //echo $this->universalViewer($item);
                 $pdf = 1;
             endif;
-        endforeach;
+       // endforeach;
         if ($pdf == 0):
             echo "<div class='element-text files-full'>";
             echo files_for_item(array('imageSize' => 'fullsize')); 
             echo "</div>";
         endif;
      ?>
-    <?php endif; ?>
+    <?php endif ?>
 
     <div id="item-metadata">
         <?php echo all_element_texts('item'); ?>

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo get_html_lang(); ?>">
 <head>
+<link rel="shortcut icon" href="https://www.siue.edu/favicon.ico" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if ( $description = option('description')): ?>
